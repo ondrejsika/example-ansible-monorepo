@@ -1,5 +1,9 @@
 ---
 - name: Setup
   hosts: all
+  vars:
+    setup_ssh_keys:
+      - https://github.com/ondrejsika.keys
   roles:
+    - setup
     - nginx
