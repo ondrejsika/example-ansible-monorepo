@@ -15,8 +15,8 @@ cd example-ansible-monorepo
 ### Clone Configuratuions
 
 ```
-git clone git@github.com:ondrejsika/example-ansible-monorepo-dev.git values/dev
-git clone git@github.com:ondrejsika/example-ansible-monorepo-prod.git values/prod
+git clone git@github.com:ondrejsika/example-ansible-monorepo-dev.git env/dev
+git clone git@github.com:ondrejsika/example-ansible-monorepo-prod.git env/prod
 ```
 
 ### Apply Dev
