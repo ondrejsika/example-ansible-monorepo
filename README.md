@@ -10,6 +10,7 @@
 ```
 git clone git@github.com:ondrejsika/example-ansible-monorepo.git
 cd example-ansible-monorepo
+pipenv install
 ```
 
 ### Clone Configuratuions
