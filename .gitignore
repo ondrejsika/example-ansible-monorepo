@@ -11,4 +11,5 @@ terraform.tfvars
 .terraform.tfstate.lock.info
 
 # Values
-/values
+/values/**/*
+!/values/.keep
