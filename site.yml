@@ -6,4 +6,6 @@
       - https://github.com/ondrejsika.keys
   roles:
     - setup
+    - sshd
+    - root_passwd
     - nginx
