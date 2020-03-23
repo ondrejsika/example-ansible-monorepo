@@ -1,0 +1,5 @@
+---
+- name: Setup
+  hosts: all
+  roles:
+    - setup
