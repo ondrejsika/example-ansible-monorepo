@@ -1,0 +1,5 @@
+- name: Install on Debian
+  apt:
+    name: cowsay
+    update_cache: yes
+    state: '{{ cowsay_state }}'

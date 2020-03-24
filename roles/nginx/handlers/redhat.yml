@@ -1,0 +1,5 @@
+- name: Start Nginx on RedHat
+  service:
+    name: nginx
+    state: '{{ nginx_service_state }}'
+  when: ansible_os_family == 'RedHat'

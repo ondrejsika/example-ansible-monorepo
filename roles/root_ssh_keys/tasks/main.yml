@@ -1,6 +1,6 @@
-- name: Setup SSH keys
+- name: Setup SSH Keys for Root
   authorized_key:
     user: root
     state: present
     key: '{{ item }}'
-  loop: '{{ setup_ssh_keys }}'
+  loop: '{{ root_ssh_keys }}'

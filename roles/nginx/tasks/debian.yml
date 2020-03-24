@@ -1,0 +1,7 @@
+- name: Install Nginx on Debian
+  apt:
+    name: nginx
+    update_cache: yes
+    state: '{{ nginx_package_state }}'
+  notify:
+    - Start Nginx

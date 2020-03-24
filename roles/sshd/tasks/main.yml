@@ -1,11 +1,12 @@
-- name: Allow Root login
+- name: Allow Root Login
   lineinfile:
     path: /etc/ssh/sshd_config
     regex: PermitRootLogin
     line: PermitRootLogin {{ sshd_permit_root_login }}
   notify:
     - restart sshd
-- name: Allow password authentication
+
+- name: Allow Password Authentication
   lineinfile:
     path: /etc/ssh/sshd_config
     regex: PasswordAuthentication

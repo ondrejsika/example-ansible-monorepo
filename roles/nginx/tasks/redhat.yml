@@ -1,0 +1,6 @@
+- name: Install Nginx on RedHat
+  yum:
+    name: nginx
+    state: '{{ nginx_package_state }}'
+  notify:
+    - Start Nginx
