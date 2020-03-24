@@ -5,16 +5,3 @@
     owner: root
     group: root
     mode: 0644
-- name: 'Create dir for lang: {{ item }}'
-  file:
-    path: /var/www/html/{{ item }}
-    state: directory
-  loop: '{{ nginx_site_langs }}'
-- name: 'Copy index.html from template per language: {{ item }}'
-  template:
-    src: index.html.j2
-    dest: /var/www/html/{{ item }}/index.html
-    owner: root
-    group: root
-    mode: 0644
-  loop: '{{ nginx_site_langs }}'

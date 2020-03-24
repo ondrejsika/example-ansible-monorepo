@@ -1,6 +1,1 @@
-nginx_site_first_name: Hello
-nginx_site_last_name: World
-nginx_site_langs:
-    - cs
-    - en
-    - de
+nginx_site_message: Default Nginx Site Message
