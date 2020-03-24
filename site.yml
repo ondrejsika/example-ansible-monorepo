@@ -1,11 +1,18 @@
 ---
-- name: Setup
+- name: Global Server Setup
   hosts: all
-  vars:
-    setup_ssh_keys:
-      - https://github.com/ondrejsika.keys
   roles:
-    - setup
+    - root_ssh_keys
     - sshd
+
+- name: Prod Setup
+  hosts: prod
+  roles:
+    - nginx_site
+
+- name: Dev Setup
+  hosts: dev
+  roles:
     - root_passwd
-    - nginx
+    - cowsay
+    - nginx_site
