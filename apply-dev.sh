@@ -1,3 +1,3 @@
 #!/bin/sh
 
-pipenv run ansible-playbook -i env/dev/hosts --extra-vars @env/dev/values.yml site.yml
+pipenv run ansible-playbook -i env/dev/hosts -e @env/dev/values.yml site.yml
